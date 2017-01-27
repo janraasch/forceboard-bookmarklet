@@ -11,15 +11,20 @@
     return true;
   };
 
+  var findButton = function () {
+    return document.getElementById('refreshButton') || document.getElementById('refreshInput');
+  };
+
   var autoRefresh = function () {
     var seconds = new Date().getSeconds();
     var time = /(..)(:..)/.exec(new Date()); // The prettyprinted time.
     var hour = time[1] % 12 || 12; // The prettyprinted hour.
     var period = ':' + seconds + ' ' + (time[1] < 12 ? 'AM' : 'PM'); // The period of the day.
+    var refreshButton = findButton();
 
-    if (document.getElementById('refreshButton')) {
+    if (refreshButton) {
       log('At ' + hour + time[2] + period + ' : refreshButton found, clicking ...');
-      document.getElementById('refreshButton').click();
+      refreshButton.click();
     } else {
       log('Unable to locate Refresh Button.');
     }
