@@ -39,5 +39,5 @@
     log('Unable to init Styles.')
   }
 
-   initInterval(10000);
+   initInterval(5 * 60000);
 }())
