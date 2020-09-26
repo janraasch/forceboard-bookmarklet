@@ -4,7 +4,7 @@
 
 ## Usage
 
-Navigate to <a href="http://www.janraasch.com/forceboard-bookmarklet">this page</a> to get the bookmarklet.
+Navigate to <a href="http://janraasch.github.io/forceboard-bookmarklet">this page</a> to get the bookmarklet.
 
 Then navigate to some Salesforce Dashboard and click on the bookmark to activate!
 
